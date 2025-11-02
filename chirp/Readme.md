@@ -36,13 +36,16 @@ ant : ant adm cdrom sudo dip plugdev users lpadmin docker
 
 ## Add yourself into dialout group
 ```
-(venv) ant@sam:~/github/uv-k5-firmware-custom/yxshi$ sudo usermod -a -G dialout $USER
-(venv) ant@sam:~/github/uv-k5-firmware-custom/yxshi$ groups
+sudo usermod -a -G dialout $USER
+groups
 ```
 
 # Logout to make the groups work!!
 
 ## Run the docker container
 ```
-(venv) ant@sam:~/github/uv-k5-firmware-custom/yxshi$ sudo docker run -it --rm --device=/dev/ttyUSB0:/dev/ttyUSB0 -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix chirp
+sudo docker run -it --rm --device=/dev/ttyUSB0:/dev/ttyUSB0 -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /tmp/app:/app chirp
 ```
+
+## Update and upload the radio.
+You may import the csv file `Quansheng_UV-K5_20251102.csv` and upload to the radio.
