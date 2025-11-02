@@ -20,6 +20,7 @@ You should be able to see the GUI app.
 # Make the app access the serial port.
 
 ## Find the tty port name
+First connect your cable to the serial port and turn on your radio.
 ```
 $ sudo dmesg|grep tty
 [    0.085845] printk: legacy console [tty0] enabled
@@ -33,7 +34,7 @@ $ sudo dmesg|grep tty
 ant : ant adm cdrom sudo dip plugdev users lpadmin docker
 ```
 
-## Add yourself intot dialout group
+## Add yourself into dialout group
 ```
 (venv) ant@sam:~/github/uv-k5-firmware-custom/yxshi$ sudo usermod -a -G dialout $USER
 (venv) ant@sam:~/github/uv-k5-firmware-custom/yxshi$ groups
