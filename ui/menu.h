@@ -129,10 +129,10 @@ enum
 extern const uint8_t FIRST_HIDDEN_MENU_ITEM;
 extern const t_menu_item MenuList[];
 
-extern const char        gSubMenu_TXP[3][5];
+extern const char        gSubMenu_TXP[3][5]; // Nguvu
 extern const char        gSubMenu_SFT_D[3][4];
-extern const char        gSubMenu_W_N[2][7];
-extern const char        gSubMenu_OFF_ON[2][4];
+extern const char        gSubMenu_W_N[2][7]; // Upana
+extern const char        gSubMenu_OFF_ON[2][4]; // Zima/Washa
 extern const char        gSubMenu_SAVE[5][4];
 extern const char        gSubMenu_TOT[11][7];
 extern const char* const gSubMenu_RXMode[4];
@@ -141,22 +141,22 @@ extern const char* const gSubMenu_RXMode[4];
 	extern const char    gSubMenu_VOICE[3][4];
 #endif
 extern const char        gSubMenu_SC_REV[3][8];
-extern const char* const gSubMenu_MDF[4];
+extern const char* const gSubMenu_MDF[4]; // Onyesho
 #ifdef ENABLE_ALARM
-	extern const char    gSubMenu_AL_MOD[2][5];
+	extern const char    gSubMenu_AL_MOD[2][5]; // Kengele
 #endif
 #ifdef ENABLE_DTMF_CALLING
-extern const char        gSubMenu_D_RSP[4][11];
+extern const char        gSubMenu_D_RSP[4][11]; // Jibu D
 #endif
 extern const char* const gSubMenu_PTT_ID[5];
-extern const char        gSubMenu_PONMSG[4][8];
-extern const char        gSubMenu_ROGER[3][6];
-extern const char        gSubMenu_RESET[2][4];
+extern const char        gSubMenu_PONMSG[4][8]; // Ujumbe Washa
+extern const char        gSubMenu_ROGER[3][6]; // Roger Beep
+extern const char        gSubMenu_RESET[2][4]; // Weka Upya
 extern const char* const gSubMenu_F_LOCK[F_LOCK_LEN];
-extern const char        gSubMenu_BACKLIGHT[8][7];
-extern const char        gSubMenu_RX_TX[4][6];
-extern const char        gSubMenu_BAT_TXT[3][8];
-extern const char 		 gSubMenu_BATTYP[2][9];
+extern const char        gSubMenu_BACKLIGHT[8][7]; // Taa
+extern const char        gSubMenu_RX_TX[4][6]; // RX/TX
+extern const char        gSubMenu_BAT_TXT[3][8]; // Maandishi Betri
+extern const char 		 gSubMenu_BATTYP[2][9]; // Aina ya Betri
 extern const char        gSubMenu_SCRAMBLER[11][7];
 
 typedef struct {char* name; uint8_t id;} t_sidefunction;

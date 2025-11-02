@@ -40,104 +40,104 @@
 const t_menu_item MenuList[] =
 {
 //   text,     voice ID,                               menu ID
-	{"Step",   VOICE_ID_FREQUENCY_STEP,                MENU_STEP          },
-	{"TxPwr",  VOICE_ID_POWER,                         MENU_TXP           }, // was "TXP"
+	{"Hatua",   VOICE_ID_FREQUENCY_STEP,                MENU_STEP          },
+	{"NguvuT",  VOICE_ID_POWER,                         MENU_TXP           }, // was "TXP"
 	{"RxDCS",  VOICE_ID_DCS,                           MENU_R_DCS         }, // was "R_DCS"
 	{"RxCTCS", VOICE_ID_CTCSS,                         MENU_R_CTCS        }, // was "R_CTCS"
 	{"TxDCS",  VOICE_ID_DCS,                           MENU_T_DCS         }, // was "T_DCS"
 	{"TxCTCS", VOICE_ID_CTCSS,                         MENU_T_CTCS        }, // was "T_CTCS"
-	{"TxODir", VOICE_ID_TX_OFFSET_FREQUENCY_DIRECTION, MENU_SFT_D         }, // was "SFT_D"
-	{"TxOffs", VOICE_ID_TX_OFFSET_FREQUENCY,           MENU_OFFSET        }, // was "OFFSET"
-	{"W/N",    VOICE_ID_CHANNEL_BANDWIDTH,             MENU_W_N           },
-	{"Scramb", VOICE_ID_SCRAMBLER_ON,                  MENU_SCR           }, // was "SCR"
-	{"BusyCL", VOICE_ID_BUSY_LOCKOUT,                  MENU_BCL           }, // was "BCL"
-	{"Compnd", VOICE_ID_INVALID,                       MENU_COMPAND       },
-	{"Demodu", VOICE_ID_INVALID,                       MENU_AM            }, // was "AM"
-	{"ScAdd1", VOICE_ID_INVALID,                       MENU_S_ADD1        },
-	{"ScAdd2", VOICE_ID_INVALID,                       MENU_S_ADD2        },
-	{"ChSave", VOICE_ID_MEMORY_CHANNEL,                MENU_MEM_CH        }, // was "MEM-CH"
-	{"ChDele", VOICE_ID_DELETE_CHANNEL,                MENU_DEL_CH        }, // was "DEL-CH"
-	{"ChName", VOICE_ID_INVALID,                       MENU_MEM_NAME      },
+	{"Mwelek", VOICE_ID_TX_OFFSET_FREQUENCY_DIRECTION, MENU_SFT_D         }, // was "SFT_D"
+	{"Kutoa", VOICE_ID_TX_OFFSET_FREQUENCY,           MENU_OFFSET        }, // was "OFFSET"
+	{"Upana",    VOICE_ID_CHANNEL_BANDWIDTH,             MENU_W_N           },
+	{"Ficha", VOICE_ID_SCRAMBLER_ON,                  MENU_SCR           }, // was "SCR"
+	{"Shughl", VOICE_ID_BUSY_LOCKOUT,                  MENU_BCL           }, // was "BCL"
+	{"Kupanu", VOICE_ID_INVALID,                       MENU_COMPAND       },
+	{"Modi", VOICE_ID_INVALID,                       MENU_AM            }, // was "AM"
+	{"Ongez1", VOICE_ID_INVALID,                       MENU_S_ADD1        },
+	{"Ongez2", VOICE_ID_INVALID,                       MENU_S_ADD2        },
+	{"Hifadi", VOICE_ID_MEMORY_CHANNEL,                MENU_MEM_CH        }, // was "MEM-CH"
+	{"Futa", VOICE_ID_DELETE_CHANNEL,                MENU_DEL_CH        }, // was "DEL-CH"
+	{"Jina", VOICE_ID_INVALID,                       MENU_MEM_NAME      },
 
-	{"SList",  VOICE_ID_INVALID,                       MENU_S_LIST        },
-	{"SList1", VOICE_ID_INVALID,                       MENU_SLIST1        },
-	{"SList2", VOICE_ID_INVALID,                       MENU_SLIST2        },
-	{"ScnRev", VOICE_ID_INVALID,                       MENU_SC_REV        },
+	{"Orodha",  VOICE_ID_INVALID,                       MENU_S_LIST        },
+	{"Orodha1", VOICE_ID_INVALID,                       MENU_SLIST1        },
+	{"Orodha2", VOICE_ID_INVALID,                       MENU_SLIST2        },
+	{"Tafuta", VOICE_ID_INVALID,                       MENU_SC_REV        },
 #ifdef ENABLE_NOAA
-	{"NOAA-S", VOICE_ID_INVALID,                       MENU_NOAA_S        },
+	{"NOAA-S", VOICE_ID_INVALID,                       MENU_NOAA_S        }, // Hali ya hewa
 #endif
-	{"F1Shrt",    VOICE_ID_INVALID,                    MENU_F1SHRT        },
-	{"F1Long",    VOICE_ID_INVALID,                    MENU_F1LONG        },
-	{"F2Shrt",    VOICE_ID_INVALID,                    MENU_F2SHRT        },
-	{"F2Long",    VOICE_ID_INVALID,                    MENU_F2LONG        },
-	{"M Long",    VOICE_ID_INVALID,                    MENU_MLONG         },
+	{"F1Fupi",    VOICE_ID_INVALID,                    MENU_F1SHRT        },
+	{"F1Ndefu",    VOICE_ID_INVALID,                    MENU_F1LONG        },
+	{"F2Fupi",    VOICE_ID_INVALID,                    MENU_F2SHRT        },
+	{"F2Ndefu",    VOICE_ID_INVALID,                    MENU_F2LONG        },
+	{"MNdefu",    VOICE_ID_INVALID,                    MENU_MLONG         },
 
-	{"KeyLck", VOICE_ID_INVALID,                       MENU_AUTOLK        }, // was "AUTOLk"
-	{"TxTOut", VOICE_ID_TRANSMIT_OVER_TIME,            MENU_TOT           }, // was "TOT"
-	{"BatSav", VOICE_ID_SAVE_MODE,                     MENU_SAVE          }, // was "SAVE"
-	{"Mic",    VOICE_ID_INVALID,                       MENU_MIC           },
+	{"Kifung", VOICE_ID_INVALID,                       MENU_AUTOLK        }, // was "AUTOLk"
+	{"MudaTx", VOICE_ID_TRANSMIT_OVER_TIME,            MENU_TOT           }, // was "TOT"
+	{"Betri", VOICE_ID_SAVE_MODE,                     MENU_SAVE          }, // was "SAVE"
+	{"Maikro",    VOICE_ID_INVALID,                       MENU_MIC           },
 #ifdef ENABLE_AUDIO_BAR
-	{"MicBar", VOICE_ID_INVALID,                       MENU_MIC_BAR       },
+	{"PaaMaik", VOICE_ID_INVALID,                       MENU_MIC_BAR       },
 #endif
-	{"ChDisp", VOICE_ID_INVALID,                       MENU_MDF           }, // was "MDF"
-	{"POnMsg", VOICE_ID_INVALID,                       MENU_PONMSG        },
-	{"BatTxt", VOICE_ID_INVALID,                       MENU_BAT_TXT       },
-	{"BackLt", VOICE_ID_INVALID,                       MENU_ABR           }, // was "ABR"
-	{"BLMin",  VOICE_ID_INVALID,                       MENU_ABR_MIN       },
-	{"BLMax",  VOICE_ID_INVALID,                       MENU_ABR_MAX       },
-	{"BltTRX", VOICE_ID_INVALID,                       MENU_ABR_ON_TX_RX  },
-	{"Beep",   VOICE_ID_BEEP_PROMPT,                   MENU_BEEP          },
+	{"Onyesh", VOICE_ID_INVALID,                       MENU_MDF           }, // was "MDF"
+	{"Ujumbe", VOICE_ID_INVALID,                       MENU_PONMSG        },
+	{"Maandi", VOICE_ID_INVALID,                       MENU_BAT_TXT       },
+	{"Taa", VOICE_ID_INVALID,                       MENU_ABR           }, // was "ABR"
+	{"TaaMin",  VOICE_ID_INVALID,                       MENU_ABR_MIN       },
+	{"TaaMax",  VOICE_ID_INVALID,                       MENU_ABR_MAX       },
+	{"TaaTRX", VOICE_ID_INVALID,                       MENU_ABR_ON_TX_RX  },
+	{"Mlio",   VOICE_ID_BEEP_PROMPT,                   MENU_BEEP          },
 #ifdef ENABLE_VOICE
-	{"Voice",  VOICE_ID_VOICE_PROMPT,                  MENU_VOICE         },
+	{"Sauti",  VOICE_ID_VOICE_PROMPT,                  MENU_VOICE         },
 #endif
-	{"Roger",  VOICE_ID_INVALID,                       MENU_ROGER         },
-	{"STE",    VOICE_ID_INVALID,                       MENU_STE           },
-	{"RP STE", VOICE_ID_INVALID,                       MENU_RP_STE        },
-	{"1 Call", VOICE_ID_INVALID,                       MENU_1_CALL        },
+	{"Roger",  VOICE_ID_INVALID,                       MENU_ROGER         }, // Sauti ya mwisho
+	{"STE",    VOICE_ID_INVALID,                       MENU_STE           }, // Mkia
+	{"RP-STE", VOICE_ID_INVALID,                       MENU_RP_STE        }, // Mkia wa RP
+	{"Piga 1", VOICE_ID_INVALID,                       MENU_1_CALL        },
 #ifdef ENABLE_ALARM
-	{"AlarmT", VOICE_ID_INVALID,                       MENU_AL_MOD        },
+	{"Kengele", VOICE_ID_INVALID,                       MENU_AL_MOD        },
 #endif
 #ifdef ENABLE_DTMF_CALLING
-	{"ANI ID", VOICE_ID_ANI_CODE,                      MENU_ANI_ID        },
+	{"ANI-ID", VOICE_ID_ANI_CODE,                      MENU_ANI_ID        }, // Kitambulisho
 #endif
-	{"UPCode", VOICE_ID_INVALID,                       MENU_UPCODE        },
-	{"DWCode", VOICE_ID_INVALID,                       MENU_DWCODE        },
-	{"PTT ID", VOICE_ID_INVALID,                       MENU_PTT_ID        },
-	{"D ST",   VOICE_ID_INVALID,                       MENU_D_ST          },
+	{"NambJuu", VOICE_ID_INVALID,                       MENU_UPCODE        },
+	{"NambChi", VOICE_ID_INVALID,                       MENU_DWCODE        },
+	{"PTT-ID", VOICE_ID_INVALID,                       MENU_PTT_ID        }, // Kitambulisho PTT
+	{"D ST",   VOICE_ID_INVALID,                       MENU_D_ST          }, // Sauti ya DTMF
 #ifdef ENABLE_DTMF_CALLING
-    {"D Resp", VOICE_ID_INVALID,                       MENU_D_RSP         },
-	{"D Hold", VOICE_ID_INVALID,                       MENU_D_HOLD        },
+    {"Jibu D", VOICE_ID_INVALID,                       MENU_D_RSP         },
+	{"ShikilD", VOICE_ID_INVALID,                       MENU_D_HOLD        },
 #endif
-	{"D Prel", VOICE_ID_INVALID,                       MENU_D_PRE         },
+	{"AwaliD", VOICE_ID_INVALID,                       MENU_D_PRE         },
 #ifdef ENABLE_DTMF_CALLING
-	{"D Decd", VOICE_ID_INVALID,                       MENU_D_DCD         },
-	{"D List", VOICE_ID_INVALID,                       MENU_D_LIST        },
+	{"PokeaD", VOICE_ID_INVALID,                       MENU_D_DCD         },
+	{"OrodhaD", VOICE_ID_INVALID,                       MENU_D_LIST        },
 #endif
-	{"D Live", VOICE_ID_INVALID,                       MENU_D_LIVE_DEC    }, // live DTMF decoder
+	{"PokeaM", VOICE_ID_INVALID,                       MENU_D_LIVE_DEC    }, // live DTMF decoder
 #ifdef ENABLE_AM_FIX
-	{"AM Fix", VOICE_ID_INVALID,                       MENU_AM_FIX        },
+	{"RekebAM", VOICE_ID_INVALID,                       MENU_AM_FIX        },
 #endif
 #ifdef ENABLE_VOX
-	{"VOX",    VOICE_ID_VOX,                           MENU_VOX           },
+	{"VOX",    VOICE_ID_VOX,                           MENU_VOX           }, // Sauti
 #endif
-	{"BatVol", VOICE_ID_INVALID,                       MENU_VOL           }, // was "VOL"
-	{"RxMode", VOICE_ID_DUAL_STANDBY,                  MENU_TDR           },
-	{"Sql",    VOICE_ID_SQUELCH,                       MENU_SQL           },
+	{"VoltiB", VOICE_ID_INVALID,                       MENU_VOL           }, // was "VOL"
+	{"ModiRx", VOICE_ID_DUAL_STANDBY,                  MENU_TDR           },
+	{"Squel",    VOICE_ID_SQUELCH,                       MENU_SQL           },
 
 	// hidden menu items from here on
 	// enabled if pressing both the PTT and upper side button at power-on
-	{"F Lock", VOICE_ID_INVALID,                       MENU_F_LOCK        },
+	{"FungaF", VOICE_ID_INVALID,                       MENU_F_LOCK        },
 	{"Tx 200", VOICE_ID_INVALID,                       MENU_200TX         }, // was "200TX"
 	{"Tx 350", VOICE_ID_INVALID,                       MENU_350TX         }, // was "350TX"
 	{"Tx 500", VOICE_ID_INVALID,                       MENU_500TX         }, // was "500TX"
-	{"350 En", VOICE_ID_INVALID,                       MENU_350EN         }, // was "350EN"
-	{"ScraEn", VOICE_ID_INVALID,                       MENU_SCREN         }, // was "SCREN"
+	{"Was350", VOICE_ID_INVALID,                       MENU_350EN         }, // was "350EN"
+	{"WashaF", VOICE_ID_INVALID,                       MENU_SCREN         }, // was "SCREN"
 #ifdef ENABLE_F_CAL_MENU
-	{"FrCali", VOICE_ID_INVALID,                       MENU_F_CALI        }, // reference xtal calibration
+	{"RekebFr", VOICE_ID_INVALID,                       MENU_F_CALI        }, // reference xtal calibration
 #endif
-	{"BatCal", VOICE_ID_INVALID,                       MENU_BATCAL        }, // battery voltage calibration
-	{"BatTyp", VOICE_ID_INVALID,                       MENU_BATTYP        }, // battery type 1600/2200mAh
-	{"Reset",  VOICE_ID_INITIALISATION,                MENU_RESET         }, // might be better to move this to the hidden menu items ?
+	{"RekebBt", VOICE_ID_INVALID,                       MENU_BATCAL        }, // battery voltage calibration
+	{"AinaBat", VOICE_ID_INVALID,                       MENU_BATTYP        }, // battery type 1600/2200mAh
+	{"WekaUp",  VOICE_ID_INITIALISATION,                MENU_RESET         }, // might be better to move this to the hidden menu items ?
 
 	{"",       VOICE_ID_INVALID,                       0xff               }  // end of list - DO NOT delete or move this this
 };
@@ -160,14 +160,14 @@ const char gSubMenu_SFT_D[][4] =
 
 const char gSubMenu_W_N[][7] =
 {
-	"WIDE",
-	"NARROW"
+	"PANA",
+	"NYEMBA"
 };
 
 const char gSubMenu_OFF_ON[][4] =
 {
-	"OFF",
-	"ON"
+	"ZIMA",
+	"WASA"
 };
 
 const char gSubMenu_SAVE[][4] =
@@ -196,10 +196,10 @@ const char gSubMenu_TOT[][7] =
 
 const char* const gSubMenu_RXMode[] =
 {
-	"MAIN\nONLY", 		// TX and RX on main only
-	"DUAL RX\nRESPOND", // Watch both and respond
-	"CROSS\nBAND", 		// TX on main, RX on secondary
-	"MAIN TX\nDUAL RX" 	// always TX on main, but RX on both
+	"KUU\nPEKEE", 		// TX and RX on main only
+	"RX MBILI\nJIBU", // Watch both and respond
+	"Bendi-X", 		// TX on main, RX on secondary
+	"TX KUU\nRX MBILI" 	// always TX on main, but RX on both
 };
 
 #ifdef ENABLE_VOICE
@@ -213,34 +213,34 @@ const char* const gSubMenu_RXMode[] =
 
 const char gSubMenu_SC_REV[][8] =
 {
-	"TIMEOUT",
+	"MUDA",
 	"CARRIER",
-	"STOP"
+	"SITISHA"
 };
 
 const char* const gSubMenu_MDF[] =
 {
 	"FREQ",
-	"CHANNEL\nNUMBER",
-	"NAME",
-	"NAME\n+\nFREQ"
+	"NAMBA YA\nCHANELI",
+	"JINA",
+	"JINA\n+\nFREQ"
 };
 
 #ifdef ENABLE_ALARM
 	const char gSubMenu_AL_MOD[][5] =
 	{
 		"SITE",
-		"TONE"
+		"TONI"
 	};
 #endif
 
 #ifdef ENABLE_DTMF_CALLING
 const char gSubMenu_D_RSP[][11] =
 {
-	"DO\nNOTHING",
-	"RING",
-	"REPLY",
-	"BOTH"
+	"USIFAN\nKITU",
+	"MLIO",
+	"JIBU",
+	"ZOTE"
 };
 #endif
 
@@ -248,22 +248,22 @@ const char* const gSubMenu_PTT_ID[] =
 {
 	"OFF",
 	"UP CODE",
-	"DOWN CODE",
-	"UP+DOWN\nCODE",
-	"APOLLO\nQUINDAR"
+	"DOWN\nCODE",
+	"UP+DOWN",
+	"APOLLO"
 };
 
 const char gSubMenu_PONMSG[][8] =
 {
-	"FULL",
-	"MESSAGE",
-	"VOLTAGE",
-	"NONE"
+	"KABISA",
+	"UJUMBE",
+	"VOLTI",
+	"HAKUNA"
 };
 
 const char gSubMenu_ROGER[][6] =
 {
-	"OFF",
+	"ZIMA",
 	"ROGER",
 	"MDC"
 };
@@ -271,19 +271,19 @@ const char gSubMenu_ROGER[][6] =
 const char gSubMenu_RESET[][4] =
 {
 	"VFO",
-	"ALL"
+	"ZOTE"
 };
 
 const char * const gSubMenu_F_LOCK[] =
 {
-	"DEFAULT+\n137-174\n400-470",
+	"CHAGUO\n137-174\n400-470",
 	"FCC HAM\n144-148\n420-450",
 	"CE HAM\n144-146\n430-440",
 	"GB HAM\n144-148\n430-440",
 	"137-174\n400-430",
 	"137-174\n400-438",
-	"DISABLE\nALL",
-	"UNLOCK\nALL",
+	"ZIMA\nZOTE",
+	"FUNGUA\nZOTE",
 };
 
 const char gSubMenu_BACKLIGHT[][7] =
@@ -300,17 +300,17 @@ const char gSubMenu_BACKLIGHT[][7] =
 
 const char gSubMenu_RX_TX[][6] =
 {
-	"OFF",
+	"ZIMA",
 	"TX",
 	"RX",
-	"TX/RX"
+	"TX-RX"
 };
 
 const char gSubMenu_BAT_TXT[][8] =
 {
-	"NONE",
-	"VOLTAGE",
-	"PERCENT"
+	"HAKUNA",
+	"VOLTI",
+	"ASILIMIA"
 };
 
 const char gSubMenu_BATTYP[][9] =
@@ -336,34 +336,34 @@ const char gSubMenu_SCRAMBLER[][7] =
 
 const t_sidefunction gSubMenu_SIDEFUNCTIONS[] =
 {
-	{"NONE",			ACTION_OPT_NONE},
+	{"HAKUNA",			ACTION_OPT_NONE},
 #ifdef ENABLE_FLASHLIGHT
-	{"FLASH\nLIGHT",	ACTION_OPT_FLASHLIGHT},
+	{"TOCHI",	ACTION_OPT_FLASHLIGHT},
 #endif
-	{"POWER",			ACTION_OPT_POWER},
-	{"MONITOR",			ACTION_OPT_MONITOR},
-	{"SCAN",			ACTION_OPT_SCAN},
+	{"NGUVU",			ACTION_OPT_POWER},
+	{"SIKILIZA",			ACTION_OPT_MONITOR},
+	{"TAFUTA",			ACTION_OPT_SCAN},
 #ifdef ENABLE_VOX
-	{"VOX",				ACTION_OPT_VOX},
+	{"VOX",				ACTION_OPT_VOX}, // Sauti
 #endif
 #ifdef ENABLE_ALARM
-	{"ALARM",			ACTION_OPT_ALARM},
+	{"KENGELE",			ACTION_OPT_ALARM},
 #endif
 #ifdef ENABLE_FMRADIO
-	{"FM RADIO",		ACTION_OPT_FM},
+	{"REDIO",		ACTION_OPT_FM},
 #endif
 #ifdef ENABLE_TX1750
-	{"1750HZ",			ACTION_OPT_1750},
+	{"1750HZ",			ACTION_OPT_1750}, // Hii ni thamani, ibaki
 #endif
-	{"LOCK\nKEYPAD",	ACTION_OPT_KEYLOCK},
-	{"SWITCH\nVFO",		ACTION_OPT_A_B},
-	{"VFO/MR",			ACTION_OPT_VFO_MR},
-	{"SWITCH\nDEMODUL",	ACTION_OPT_SWITCH_DEMODUL},
+	{"FUNGA\nVIFUNGO",	ACTION_OPT_KEYLOCK},
+	{"BADILI\nVFO",		ACTION_OPT_A_B},
+	{"VFO/MR",			ACTION_OPT_VFO_MR}, // Hii ni maalum, ibaki
+	{"BADILI\nDEMOD",	ACTION_OPT_SWITCH_DEMODUL},
 #ifdef ENABLE_BLMIN_TMP_OFF
-	{"BLMIN\nTMP OFF",  ACTION_OPT_BLMIN_TMP_OFF}, 		//BackLight Minimum Temporay OFF
+	{"TAA MIN\nZIMA",  ACTION_OPT_BLMIN_TMP_OFF}, 		//BackLight Minimum Temporay OFF
 #endif
 #ifdef ENABLE_SPECTRUM
-	{"SPECTRUM",         ACTION_OPT_SPECTRUM}
+	{"SPECTRUM",         ACTION_OPT_SPECTRUM} // Acha hivi
 #endif
 };
 
